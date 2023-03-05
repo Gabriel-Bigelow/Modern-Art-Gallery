@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url('./assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+
+/* @font-face {
+    font-family: "Big Shoulders Display";
+    src: url('./assets/fonts/BigShouldersDisplay-Black.ttf');
+} */
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/Outfit-Light.ttf");
+}
+
+.almost-black-bg {
+    background-color: #151515;
+}
+.almost-black {
+    color: #151515;
+}
+.dark-gray-bg {
+    background-color: #444444;
+}
+.dark-gray {
+    color:#444444;
+}
+.gold-bg {
+    background-color: #d5966C;
+}
+.gold {
+    color: #d5966C;
+}
+.white-bg {
+    background-color: white;
+}
+.white {
+    color: white;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    color: #444444;
+}
+
+body, p {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #151515;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+}
+
+h3 {
+    font-size: 3.75rem;
+    line-height: 3.125rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+}
+
+p, span {
+    font-size: 1.375rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-button {
+    display: grid;
+    grid-template:  72px / 204px 56px;
+    width: 260px;
+    cursor:pointer;
+}
+.nav-button div {
+    display: grid;
+    background-color:#151515;
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+.nav-button p {
+    font-family: "Big Shoulders Display";
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 3.64px;
+}
+.nav-button img {
+    height: 24px;
+    width: 8px;
+    padding: 24px;
+    background-color:#d5966C;
+}

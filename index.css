@@ -1,0 +1,163 @@
+header {
+    position: relative;
+    width: 90%;
+    margin-bottom: 11.25rem;
+}
+
+#landing-bg {
+    display: flex;
+    background-color: #151515;
+    width: 80%;
+    justify-content: end;
+}
+
+
+#landing-text {
+    position: absolute;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    margin-left: 15%;
+    top: calc(50% - 176px/2 - 122.5px);
+    justify-items: space-between;
+    gap: 5%;
+}
+#landing-text h1 {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+    word-break: break-all;
+}
+#landing-text #right-text {
+    display: grid;
+    min-width: 200px;
+    grid-template: 200px / 1fr;
+    gap: 2rem;
+}
+
+#landing-text .nav-button {
+    grid-column: 1;
+}
+
+
+
+main {
+    width: 100%;
+    margin: 10%;
+    display: grid;
+    gap: 5rem;
+}
+
+main h3 {
+    margin-top: 0;
+}
+
+#gallery-1 {
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gallery-1-text {
+    align-content: center;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+#gallery-1 img {
+    flex-basis: 45%;
+}
+
+#gallery-2 {
+    display: grid;
+    width: calc(80%);
+    grid-template: 1fr 1fr / 6fr 4fr;
+    gap: 5rem;
+}
+
+#gallery-2 img {
+    max-width: 100%;
+}
+
+#gallery-2-img-1 {
+    grid-row: 1 / span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #landing-container {
+    position: relative;
+    width: 90%;
+    height: 800px;
+    margin-bottom: 180px;
+}
+
+#landing-container h1 {
+    position: absolute;
+    top: 11.875rem;
+    left: 16%;
+    z-index: 2;
+}
+#top-right {
+    position: absolute;
+    display: grid;
+    gap: 4rem;
+    height: 10rem;
+    left: 72.55%;
+    right: 0%;
+    top: calc(50% - 160px/2 - 130px);
+    z-index: 2;
+}
+
+.landing-bg {
+    position:absolute;
+    left:0;
+    top: 0;
+    background-color: #151515;
+    width: 450px;
+    height: 100%;
+}
+
+#bg-white {
+}
+
+
+#image-hero {
+    position: absolute;
+    left: 450px;
+    top: 0%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+#landing-image-container {
+    display: flex;
+}
+
+
+
+ */
