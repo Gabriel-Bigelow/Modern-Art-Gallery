@@ -67,14 +67,17 @@ p, span {
         font-size: 55px;
         line-height: 50px;
     }
+
     h3 {
         font-size: 50px;
         line-height: 45px;
     }
+
     h4 {
         font-size: 32px;
         line-height: 32px;
     }
+
     p {
         font-size: 18px;
         line-height: 28px;
@@ -129,14 +132,17 @@ a {
 }
 
 
+
 .nav-button {
     display: inline-flex;
     cursor: pointer;
     height: 72px;
 }
+
 .nav-button div {
     display: grid;
 }
+
 .nav-button p {
     color: white;
     font-family: "Big Shoulders Display";
@@ -149,18 +155,17 @@ a {
     line-height: 24px;
     transition-duration: 0.5s;
 }
+
 .nav-button img {
     background-color: #d5966C;
     padding: 24px;
     transition-duration: 0.5s;
 }
+
 .nav-button a {
     display: grid;
     width: 208px;
 }
-
-
-
 
 
 

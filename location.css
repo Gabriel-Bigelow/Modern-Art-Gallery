@@ -49,11 +49,13 @@ footer a img:hover {
     header {
         overflow: hidden;
     }
+    
     #map-pic {
         height: 600px;
         max-width: 100vw;
         object-fit: cover;
     }
+
     header .nav-button {
         left: 5%;
     }

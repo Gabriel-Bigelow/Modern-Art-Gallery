@@ -13,6 +13,7 @@ header {
     width: 10px;
     z-index:10;
 }
+
 #image-hero {
     position: relative;
     top: 0;
@@ -31,6 +32,7 @@ header {
     overflow:hidden;
     z-index: 100;
 }
+
 #landing-text {
     position: absolute;
     display: grid;
@@ -41,10 +43,12 @@ header {
     gap: 5%;
     z-index: 20;
 }
+
 #landing-text h1 {
     grid-column: 1;
     grid-row: 1;
 }
+
 #landing-text #right-text {
     display: grid;
     min-width: 200px;
@@ -105,21 +109,23 @@ header {
     header {
         margin-bottom: 120px;
     }
+
     #landing-bg {
         width: 100%;
         height: 240px;
     }
+
     #image-hero {
         width: 100%;
         height: 240px;
         object-fit: cover;
     }
 
-
     #landing-text {
         position: relative;
         top: 0px;
         margin: 32px 16px;
+        margin-bottom: 0;
         gap: 32px;
     }
 
@@ -132,6 +138,7 @@ header {
         margin: 0;
         width: 339px;
     }
+
     #right-text {
         gap: 32px;
     }
@@ -220,6 +227,7 @@ main h3 {
     display: flex;
     flex-basis: 65%;
 }
+
 #gallery-2-flex-1 img {
     width: 100%;
 }
@@ -251,27 +259,34 @@ main h3 {
         width: auto;
         gap: 11px;
     }
+
     #gallery-1 {
         gap: 68px;
     }
+
     #gallery-1-text {
         flex-basis: 35%;
     }
+
     #gallery-1-img {
         flex-basis: 65%;
         justify-content: center;
     }
+
     #gallery-2 {
         gap: 11px;
     }
+
     #gallery-2-flex-2 {
         gap: 11px;
     }
+
     #gallery-2-img-2 {
         flex-basis: 100%;
         flex-grow: 2;
         flex-shrink: 1;
     }
+
     #gallery-2-text {
         flex-basis: 40%;
         flex-grow: 1;
@@ -285,46 +300,35 @@ main h3 {
         margin-bottom: 120px;
         gap: 32px;
     }
+
     #gallery-1 {
         flex-wrap: wrap-reverse;
         gap: 25px;
     }
+
     #gallery-1-text {
         flex-basis:100%;
     }
+
     #gallery-1-img {
         flex-basis: 100%;
     }
+
     #gallery-2 {
         flex-wrap: wrap;
         gap: 16px;
     }
+
     #gallery-2-flex-1 {
         flex-basis: 100%;
     }
+
     #gallery-2-flex-2 {
         flex-basis: 100%;
         gap: 16px;
     }
 }
 
-
-
-
-
 footer a img:hover {
     filter: invert(0%) sepia(100%) saturate(2815%) hue-rotate(313deg) brightness(100%) contrast(75%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
