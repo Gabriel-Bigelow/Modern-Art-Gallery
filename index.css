@@ -110,8 +110,11 @@ header {
         height: 240px;
     }
     #image-hero {
+        width: 100%;
+        height: 240px;
         object-fit: cover;
     }
+
 
     #landing-text {
         position: relative;
