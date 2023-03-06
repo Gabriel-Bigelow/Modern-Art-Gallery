@@ -7,13 +7,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="location.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   <title>Frontend Mentor | Art gallery website</title>
   <script src="navigation.js"></script>
 </head>
 <body>
   <header>
-    <img id="map" src="./assets/desktop/image-map@2x.webp" alt="a map of New York City showing the exact location of Modern Art Gallery's physical location."/>
-
+    <!-- <img id="map-pic" src="./assets/desktop/image-map@2x.webp" alt="a map of Rhode Island City showing Modern Art Gallery's exact physical location."/> -->
+    <div id="map"></div>
     <a href="index.html" onmouseover="navButtonMouseOver(event, 1, 0)" onmouseout="navButtonMouseOut(1, 0)" aria-label="Button navigates to Modern Art Gallery home page">
       <div class="nav-button" >
         <div class="nav-image">
@@ -26,7 +28,7 @@
     </a>
   </header>
   <main class="almost-black-bg">
-    <h2 class="uppercase white">Our<br>location</h2>
+    <h2 class="uppercase white">Our <br>location</h2>
 
     <section id="information">
         <h4 class="gold">99 King Street</h4>
@@ -57,6 +59,19 @@
       </a>
     </div>
   </footer>
+  <script>
+    let map = L.map('map', {
+      zoomControl: false,
+      center: ([41.4823, -71.3103])
+    }).setView([41.482149, -71.311064], 15);
+    var icon = L.icon({
+      iconUrl: './assets/icon-location.svg'
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
+    L.marker([41.48274991333008, -71.31236428710938], {icon: icon}).addTo(map);
+  </script>
 </body>
 </html>

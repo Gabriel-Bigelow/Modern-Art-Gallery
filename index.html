@@ -9,16 +9,19 @@
   <link rel="stylesheet" href="index.css" />
   <title>Frontend Mentor | Art gallery website</title>
   <script src="navigation.js"></script>
+  <script src="colorMask.js"></script>
 </head>
 
 <body>
   <header>
     <div id="landing-bg">
-      <img id="image-hero" src="assets/desktop/image-hero.jpg" alt="a man and a woman look at a mostly gray artwork of an elderly woman."/>
     </div>
-
+    <img id="image-hero" src="assets/desktop/image-hero.jpg" alt="a man and a woman look at a mostly gray artwork of an elderly woman." onload="getImageSize()"/>
+    
+    <div id="text-mask"><h1 class="uppercase white">Modern <br>Art Gallery</h1></div>
+    
     <div id="landing-text">
-      <h1 class="uppercase">Modern <br>Art Gallery</h1>
+      <div id="left-text"><h1 class="uppercase">Modern <br>Art Gallery</h1></div>
 
       <div id="right-text">
         <p>The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. 

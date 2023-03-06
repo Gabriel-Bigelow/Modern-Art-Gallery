@@ -3,11 +3,6 @@
     src: url('./assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf');
 }
 
-/* @font-face {
-    font-family: "Big Shoulders Display";
-    src: url('./assets/fonts/BigShouldersDisplay-Black.ttf');
-} */
-
 @font-face {
     font-family: "Outfit";
     src: url("./assets/fonts/Outfit-Light.ttf");
@@ -159,7 +154,10 @@ a {
     padding: 24px;
     transition-duration: 0.5s;
 }
-
+.nav-button a {
+    display: grid;
+    width: 208px;
+}
 
 
 
@@ -209,5 +207,17 @@ footer a img:hover {
     footer p {
         font-size: 16px;
         line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 38px;
+    }
+
+    footer div {
+        gap: 20px;
     }
 }
