@@ -13,6 +13,85 @@
     src: url("./assets/fonts/Outfit-Light.ttf");
 }
 
+html {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    color: #444444;
+}
+
+body, p {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #151515;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+}
+
+h3 {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+}
+
+p, span {
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 65px;
+    }
+
+    h2 {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    h3 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+    h4 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+
+
+
+
+
+
 .almost-black-bg {
     background-color: #151515;
 }
@@ -38,84 +117,97 @@
     color: white;
 }
 
-html {
-    font-size: 16px;
-    font-family: "Outfit", sans-serif;
-    color: #444444;
-}
 
-body, p {
-    margin: 0;
-}
 
-h1, h2, h3, h4 {
-    color: #151515;
-    font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 900;
-}
-
-h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-}
-
-h2 {
-    font-size: 4.375rem;
-    line-height: 4.375rem;
-}
-
-h3 {
-    font-size: 3.75rem;
-    line-height: 3.125rem;
-}
-
-h4 {
-    font-size: 2.25rem;
-    line-height: 2.25rem;
-}
-
-p, span {
-    font-size: 1.375rem;
-    font-weight: 300;
-}
 
 .uppercase {
     text-transform: uppercase;
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 
-
-
-
-
-
+a {
+    text-decoration: none;
+}
 
 
 .nav-button {
-    display: grid;
-    grid-template:  72px / 204px 56px;
-    width: 260px;
-    cursor:pointer;
+    display: inline-flex;
+    cursor: pointer;
+    height: 72px;
 }
 .nav-button div {
     display: grid;
-    background-color:#151515;
-    color: white;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
 }
 .nav-button p {
+    color: white;
     font-family: "Big Shoulders Display";
-    font-weight: 800;
     font-size: 20px;
+    font-weight: 800;
     letter-spacing: 3.64px;
+    background-color: #151515;
+    min-width: 156px;
+    padding: 24px 32px;
+    line-height: 24px;
+    transition-duration: 0.5s;
 }
 .nav-button img {
-    height: 24px;
-    width: 8px;
+    background-color: #d5966C;
     padding: 24px;
-    background-color:#d5966C;
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+footer h4, footer p {
+    margin: 0;
+}
+
+footer h4 {
+    min-width: 150px;
+}
+
+footer {
+    display: grid;
+    padding: 5rem 12%;
+    grid-template: 1fr / 3fr 8fr 2fr;
+    gap: 15%;
+    justify-content: space-between;
+}
+
+footer div {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer a {
+    width: 20px;
+    height: 20px;
+}
+
+footer a img:hover {
+    filter: invert(0%) sepia(100%) saturate(2815%) hue-rotate(313deg) brightness(100%) contrast(75%);
+}
+
+@media only screen and (max-width: 1100px) {
+    footer {
+        gap: 10%;
+    }
+
+    footer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }

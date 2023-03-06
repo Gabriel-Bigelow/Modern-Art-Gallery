@@ -1,0 +1,42 @@
+header {
+    display: grid;
+}
+
+header #map {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+header .nav-button{
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+
+main {
+    padding: 7.5% 12.5%;
+    display: flex;
+    justify-content: space-between;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+#information {
+    display: flex;
+    width: 50%;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+
+#information p {
+    margin-bottom: 0.5rem;
+}
+
+
+footer a img {
+    filter: invert(100%);
+}
+
+footer a img:hover {
+    filter: invert(0%);
+}

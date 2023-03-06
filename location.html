@@ -5,28 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="location.css" />
   <title>Frontend Mentor | Art gallery website</title>
+  <script src="navigation.js"></script>
 </head>
 <body>
+  <header>
+    <img id="map" src="./assets/desktop/image-map@2x.webp" alt="a map of New York City showing the exact location of Modern Art Gallery's physical location."/>
 
-  Back to Home
+    <a href="index.html" onmouseover="navButtonMouseOver(event, 1, 0)" onmouseout="navButtonMouseOut(1, 0)" aria-label="Button navigates to Modern Art Gallery home page">
+      <div class="nav-button" >
+        <div class="nav-image">
+          <img src="./assets/icon-arrow-left.svg" alt="right arrow"/>
+        </div>
+        <div class="nav-text">
+          <p class="uppercase">Back to Home</p>
+        </div>
+      </div>
+    </a>
+  </header>
+  <main class="almost-black-bg">
+    <h2 class="uppercase white">Our<br>location</h2>
 
-  Our location
+    <section id="information">
+        <h4 class="gold">99 King Street</h4>
+        <p class="white">Newport <br>
+        RI 02840 <br>
+        United States of America</p>
+        <p class="white">Our newly opened gallery is located near the Edward King House on 99 King 
+          Street, the Modern Art Gallery is free to all visitors and open seven days 
+          a week from 8am to 9pm.</p>
+    </section>
+  </main>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
+  <footer class="gold-bg">
+    <h4 class="almost-black">Modern<br> Art Gallery</h4>
+    
+    <p class="almost-black">The Modern Art Gallery is free to all visitors and open seven days a week
+  from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
 
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+    <div>
+      <a href="https://www.facebook.com/" aria-label="Button navigates to Facebook">
+        <img id="facebook" src="./assets/icon-facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Button navigates to Instagram">
+        <img id="instagram" src="./assets/icon-instagram.svg" alt="Instagram"/>
+      </a>
+      <a href="https://twitter.com/home" aria-label="Button navigates to Twitter">
+        <img id="twitter" src="./assets/icon-twitter.svg" alt="Twitter"/>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>

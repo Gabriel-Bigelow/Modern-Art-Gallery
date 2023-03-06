@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="index.css" />
   <title>Frontend Mentor | Art gallery website</title>
+  <script src="navigation.js"></script>
 </head>
 
 <body>
   <header>
     <div id="landing-bg">
-      <img id="image-hero" src="assets/desktop/image-hero.jpg" />
+      <img id="image-hero" src="assets/desktop/image-hero.jpg" alt="a man and a woman look at a mostly gray artwork of an elderly woman."/>
     </div>
 
     <div id="landing-text">
@@ -24,14 +25,16 @@
           Will these pieces inspire you? Visit us and find out.</p>
         
         
-        <div class="nav-button" onclick="">
-          <div>
-            <p class="uppercase">Our Location</p>
+        <a href="location.html" onmouseover="navButtonMouseOver(event, 0, 1)" onmouseout="navButtonMouseOut(0, 1)">
+          <div class="nav-button" >
+            <div>
+              <p class="uppercase">Our Location</p>
+            </div>
+            <div>
+              <img src="./assets/icon-arrow-right.svg" alt="right arrow"/>
+            </div>
           </div>
-          <div>
-            <img src="./assets/icon-arrow-right.svg" />
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </header>
@@ -39,35 +42,48 @@
   <main>
     <div id="gallery-1">
       <div id="gallery-1-text">
-        <h3 class="uppercase">Your day at the gallery</h3>
+        <h3 class="uppercase almost-black">Your day at the gallery</h3>
         <p>Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
       </div>
       
-      <img src="./assets/desktop/image-grid-1.jpg">
+      <div id="gallery-1-img">
+        <img src="./assets/desktop/image-grid-1.jpg" alt="A room showing multiple paintings and an art figure.">
+      </div>
     </div>
 
     <div id="gallery-2">
-      <img id="gallery-2-img-1" src="./assets/desktop/image-grid-2.jpg" />
+      <div id="gallery-2-flex-1">
+        <img src="./assets/desktop/image-grid-2.jpg" alt="A room showing a bench and a single artwork of a staircase." />
+      </div>
+      
       <div id="gallery-2-flex-2">
-        <img id="gallery-2-img-2" src="./assets/desktop/image-grid-3@2x.jpg" />
+        <div id="gallery-2-img-2">
+          <img src="./assets/desktop/image-grid-3@2x.jpg" alt="A room in which 4 people can be seen observing multiple paintings." />
+        </div>
         <div id="gallery-2-text" class="almost-black-bg">
-          <h3 class="uppercase">Come &amp be inspired</h3>
-          <p>We're excited to welcome you to our gallery and see how our collections influence you.</p>
+          <h3 class="uppercase white">Come &amp be inspired</h3>
+          <p class="white">We're excited to welcome you to our gallery and see how our collections influence you.</p>
         </div>
       </div>
     </div>
   </main>
 
   <footer class="almost-black-bg">
-    <h4>Modern Art Gallery</h4>
+    <h4 class="white">Modern <br>Art Gallery</h4>
     
-    <p>The Modern Art Gallery is free to all visitors and open seven days a week
+    <p class="white">The Modern Art Gallery is free to all visitors and open seven days a week
   from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
 
     <div>
-      <img src="./assets/icon-facebook.svg" />
-      <img src="./assets/icon-instagram.svg" />
-      <img src="./assets/icon-twitter.svg" />
+      <a href="https://www.facebook.com/" aria-label="Button navigates to Facebook">
+        <img id="facebook" src="./assets/icon-facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Button navigates to Instagram">
+        <img id="instagram" src="./assets/icon-instagram.svg" alt="Instagram"/>
+      </a>
+      <a href="https://twitter.com/home" aria-label="Button navigates to Twitter">
+        <img id="twitter" src="./assets/icon-twitter.svg" alt="Twitter"/>
+      </a>
     </div>
   </footer>
 
